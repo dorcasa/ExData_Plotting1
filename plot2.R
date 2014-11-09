@@ -4,7 +4,7 @@
 # plot over time on x-axis
 # print to PNG file 480x480 pixels
 
-# read table and abbreviate column names
+# read table and abbreviate the column names
 print("reading data file...")
 data <- read.table("household_power_consumption.txt", sep=";", skip=1, stringsAsFactors=FALSE)
 names(data) <- c("D","T","GAP","GRP","V","GI","S1","S2","S3")
