@@ -25,7 +25,7 @@ print("generating line graph...")
 png(file = "plot3.png", width=480, height=480, units="px")
 plot(d2$DT, d2$S1, type="n", ylab="Energy sub metering", xlab="")
 lines(d2$DT, d2$S1)
-lines(d2$DT, d2$S2, col="red")
+lines(d2$DT, d2$S2, col="green")
 lines(d2$DT, d2$S3, col="blue")
 legend("topright", lwd=c(1,1,1), col=c("black","red","blue"),
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))

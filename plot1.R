@@ -20,7 +20,7 @@ d2$GAP <- as.numeric(d2$GAP)
 # create histogram and print to PNG file
 print("generating histogram...")
 png(file = "plot1.png", width=480, height=480, units="px")
-with(d2, hist(GAP, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)"))
+with(d2, hist(GAP, col="blue", main="Global Active Power", xlab="Global Active Power (kilowatts)"))
 dev.off()
 
 print("histogram printed to file: plot1.png")

@@ -21,7 +21,7 @@ d2$GAP <- as.numeric(d2$GAP)
 # create line graph and print to PNG file
 print("generating line graph...")
 png(file = "plot2.png", width=480, height=480, units="px")
-plot(d2$DT, d2$GAP, type="n", ylab="Global Active Power (kilowatts)", xlab="")
+plot(d2$DT, d2$GAP, type="n", ylab="Global_Active Power (kilowatts)", xlab="")
 lines(d2$DT, d2$GAP)
 dev.off()
 
