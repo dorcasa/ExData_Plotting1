@@ -8,7 +8,7 @@
 # plot over time on x-axis
 # print to PNG file 480x480 pixels
 
-# read table and abbreviate column names
+# read table and abbreviate the column names
 print("reading data file...")
 data <- read.table("household_power_consumption.txt", sep=";", skip=1, stringsAsFactors=FALSE)
 names(data) <- c("D","T","GAP","GRP","V","GI","S1","S2","S3")
@@ -19,18 +19,18 @@ d2 <- subset(data, D %in% c("1/2/2007","2/2/2007"))
 # combine date and time into one new column
 d2$DT <- strptime(paste(d2$D, d2$T), format = "%d/%m/%Y %H:%M:%S")
 
-# convert character GAP to numeric
+# convert character field GAP to numeric
 d2$GAP <- as.numeric(d2$GAP)
 
-# convert character S1, S2, S3 to numeric
+# convert character fields S1, S2, S3 to numeric
 d2$S1 <- as.numeric(d2$S1)
 d2$S2 <- as.numeric(d2$S2)
 d2$S3 <- as.numeric(d2$S3)
 
-# convert character Voltage to numeric
+# convert character field Voltage to numeric
 d2$V <- as.numeric(d2$V)
 
-# convert character GRP to numeric
+# convert character field GRP to numeric
 d2$GRP <- as.numeric(d2$GRP)
 
 # create line graphs and print to PNG file

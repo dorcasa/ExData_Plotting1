@@ -14,7 +14,7 @@ d2 <- subset(data, D %in% c("1/2/2007","2/2/2007"))
 # combine date and time into one new column
 d2$DT <- strptime(paste(d2$D, d2$T), format = "%d/%m/%Y %H:%M:%S")
 
-# convert character GAP to numeric
+# convert character field GAP to numeric
 d2$GAP <- as.numeric(d2$GAP)
 
 # create histogram and print to PNG file

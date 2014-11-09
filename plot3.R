@@ -15,7 +15,7 @@ d2 <- subset(data, D %in% c("1/2/2007","2/2/2007"))
 # combine date and time into one new column
 d2$DT <- strptime(paste(d2$D, d2$T), format = "%d/%m/%Y %H:%M:%S")
 
-# convert character S1, S2, S3 to numeric
+# convert character fields S1, S2, S3 to numeric
 d2$S1 <- as.numeric(d2$S1)
 d2$S2 <- as.numeric(d2$S2)
 d2$S3 <- as.numeric(d2$S3)
